@@ -37,6 +37,14 @@
         });
         console.log(`Sum of the elements is: ${sum}`);
         // Creating a New Array of Uppercase String
+        const fruits=["Apple","Orange","Banana","Kiwi","Mango"];
+        const UpperCase_fruits=[];
+        fruits.forEach(function(fruits_elements){
+            // fruits_elements indicates the elements of array fruits. 
+            UpperCase_fruits.push(fruits_elements.toUpperCase());
+            // toUpperCase() is for changing the lowercase letters in the "fruits" array elements.
+        });
+        console.log(UpperCase_fruits);
     </script>
 </body>
 </html>
