@@ -52,6 +52,20 @@
             // Here, present_value is 11,12,13,14,15 and these values are multiplied by 3. Then these multiplied results are stored in array[index]
         });
         console.log(Existing_numbers);
+        // Logging Nested Array Elements
+        const matrix=[
+            [10, 11, 18],
+            [12, 13, 19],
+            [14, 15, 20]
+        ];
+        // First we have used forEach() method for outer loop
+        matrix.forEach(function(current_matrix_value, index_of_matrix_value, matrix_array){
+            console.log(`Row is ${index_of_matrix_value}:`);
+            // here, we have used forEach() method for inner loop
+            current_matrix_value.forEach(function(innervalue, innerindex){
+                console.log(`column index is ${innerindex} and it's value is ${innervalue}`);
+            });
+        });
 
     </script>
 </body>
