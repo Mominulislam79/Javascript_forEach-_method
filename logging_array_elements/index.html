@@ -52,7 +52,7 @@
             // Here, present_value is 11,12,13,14,15 and these values are multiplied by 3. Then these multiplied results are stored in array[index]
         });
         console.log(Existing_numbers);
-        // Logging Nested Array Elements
+        // Practice Example-05: Logging Nested Array Elements
         const matrix=[
             [10, 11, 18],
             [12, 13, 19],
@@ -66,7 +66,7 @@
                 console.log(`column index is ${innerindex} and it's value is ${innervalue}`);
             });
         });
-        //Practice Example-05: Counting Occurrences of Values
+        //Practice Example-06: Counting Occurrences of Values
         const letters=["s","a","b","s","g","h","h","a","s","g"];
         const counts={};
         letters.forEach(function(currentvalues){
@@ -83,7 +83,7 @@
         console.log(typeof counts);
         // and
         console.log(typeof letters);
-        // Practice Example-06: Extracting Properties from Objects
+        // Practice Example-07: Extracting Properties from Objects
         const users=[
             {President: "Barak Obama", Age:65, Language: "English"},
             {President: "Bill Clinton", Age:72, Language: "French"},
@@ -94,7 +94,7 @@
             new_users.push(current_info.President,current_info.Age,current_info.Language);
         });
         console.log(new_users);
-        // Practice Example-06: Calculating the Average of Array Elements
+        // Practice Example-08: Calculating the Average of Array Elements
         const elements_array=[10, 20, 30, 40, 50];
         let total=0;
         elements_array.forEach(function(current_element_value, current_element_index, current_array){
@@ -102,6 +102,17 @@
         })
         const Average_element=total/elements_array.length;
         console.log(`Average is : ${Average_element}`);
+        // Practice Example 09: Filtering Even Numbers
+        const number_1=[5,4,9,8,31,24];
+        const Even_numbers=[];
+        number_1.forEach(function(c_value, c_index, c_array){
+            if (c_value % 2 ===0) {
+                Even_numbers.push(c_value);
+            }
+        });
+        // console.log(`Array of the even numbers in number_1 is ${Even_numbers}`);
+        console.log(Even_numbers);
+
 
     </script>
 </body>
