@@ -83,6 +83,17 @@
         console.log(typeof counts);
         // and
         console.log(typeof letters);
+        // Practice Example-06: Extracting Properties from Objects
+        const users=[
+            {President: "Barak Obama", Age:65, Language: "English"},
+            {President: "Bill Clinton", Age:72, Language: "French"},
+            {President: "Joe Biden", Age:65, Language: "Spanish"}
+        ];
+        const new_users=[];
+        users.forEach(function(current_info, cureent_index, current_array){
+            new_users.push(current_info.President,current_info.Age,current_info.Language);
+        });
+        console.log(new_users);
 
     </script>
 </body>
