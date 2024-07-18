@@ -66,6 +66,23 @@
                 console.log(`column index is ${innerindex} and it's value is ${innervalue}`);
             });
         });
+        //Practice Example-05: Counting Occurrences of Values
+        const letters=["s","a","b","s","g","h","h","a","s","g"];
+        const counts={};
+        letters.forEach(function(currentvalues){
+            if (counts[currentvalues]) {
+                counts[currentvalues]++;
+            }
+            else
+            {
+                counts[currentvalues]=1;
+            }
+        });
+        console.log(counts);
+        // please carefully note that
+        console.log(typeof counts);
+        // and
+        console.log(typeof letters);
 
     </script>
 </body>
