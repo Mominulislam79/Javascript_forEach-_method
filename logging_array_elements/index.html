@@ -94,6 +94,14 @@
             new_users.push(current_info.President,current_info.Age,current_info.Language);
         });
         console.log(new_users);
+        // Practice Example-06: Calculating the Average of Array Elements
+        const elements_array=[10, 20, 30, 40, 50];
+        let total=0;
+        elements_array.forEach(function(current_element_value, current_element_index, current_array){
+            total+=current_element_value;
+        })
+        const Average_element=total/elements_array.length;
+        console.log(`Average is : ${Average_element}`);
 
     </script>
 </body>
