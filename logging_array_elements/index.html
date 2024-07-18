@@ -7,12 +7,14 @@
 </head>
 <body>
     <script>
+        // Logging Array Elements:
         const numbers=[100, 200, 300, 400, 500];
         numbers.forEach(function(current_value, index, array){
             console.log(`current value is ${current_value} and it's index number is ${index}`);
             /*
             In the above code;
             @- current_value means 100, 200, 300, 400, 500
+                and these elements are iterated by forEach() method.
             @-  index means 
                 index of 100 is --- 0
                 index of 200 is --- 1
@@ -21,7 +23,20 @@
                 index of 500 is --- 4
             @- array means the whole array i,e; numbers=[100, 200, 300, 400, 500]
             */
+        
+        
         });
+        //    Summing Array Elements:
+        const sum_numbers=[10, 20, 30, 40, 50];
+        let sum=0;
+        sum_numbers.forEach(function(value, index1, array1){
+            sum+=value;
+            /*
+            Here, value indicates the elements of the array, index1 indicates the index of elements and array is the whole array
+            */
+        });
+        console.log(`Sum of the elements is: ${sum}`);
+        // Creating a New Array of Uppercase String
     </script>
 </body>
 </html>
